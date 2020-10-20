@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Well Name :" />
+
+        <Spinner
+            android:id="@+id/spnWell"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="16dp"
+        android:id="@+id/listView"
+        tools:listitem="@layout/layer_item"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:layout_height="500dp" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Well Capacity : " />
+        <TextView
+            android:id="@+id/txtCapacity"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="93000000 m3" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_add_24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
